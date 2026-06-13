@@ -1,6 +1,6 @@
 # vLLM Inference Benchmark
 
-This repository benchmarks LLM inference latency and throughput with **vLLM** and **Hugging Face Transformers**. It is designed as a practical performance-engineering project for NVIDIA system software, GPU performance tooling, and deep-learning hardware architecture interviews.
+This repository benchmarks LLM inference latency and throughput with **vLLM** and **Hugging Face Transformers**. It is designed as a practical performance-engineering project for NVIDIA system software, GPU performance tooling, and deep-learning hardware architecture interviews. 
 
 This repository does **not** include pre-filled benchmark results. Every result should be generated on the target machine and paired with `results/env.json`, which records the actual GPU, driver, CUDA, PyTorch, vLLM, and transformers versions.
 
