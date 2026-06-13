@@ -1,0 +1,8 @@
+torch
+transformers
+accelerate
+vllm
+openai
+httpx
+numpy
+psutil

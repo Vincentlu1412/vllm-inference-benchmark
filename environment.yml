@@ -1,0 +1,14 @@
+name: vllm-bench
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - psutil
+  - numpy
+  - pip:
+      - transformers
+      - accelerate
+      - openai
+      - httpx
+      - vllm

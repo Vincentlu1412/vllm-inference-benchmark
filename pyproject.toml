@@ -1,0 +1,22 @@
+[project]
+name = "vllm-inference-benchmark"
+version = "0.1.0"
+description = "vLLM and Hugging Face inference benchmark scripts for latency and throughput analysis."
+requires-python = ">=3.10"
+dependencies = [
+  "torch",
+  "transformers",
+  "accelerate",
+  "vllm",
+  "openai",
+  "httpx",
+  "numpy",
+  "psutil",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

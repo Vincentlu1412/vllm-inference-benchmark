@@ -1,0 +1,53 @@
+{
+  "warmup": 2,
+  "repeat": 3,
+  "seed": 7,
+  "backend_config": {
+    "dtype": "float16",
+    "tensor_parallel_size": 1,
+    "gpu_memory_utilization": 0.85,
+    "trust_remote_code": true
+  },
+  "cases": [
+    {
+      "name": "decode_short_bs1",
+      "batch_size": 1,
+      "prompt_tokens": 128,
+      "max_new_tokens": 32,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    {
+      "name": "decode_short_bs4",
+      "batch_size": 4,
+      "prompt_tokens": 128,
+      "max_new_tokens": 32,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    {
+      "name": "prefill_medium_bs2",
+      "batch_size": 2,
+      "prompt_tokens": 512,
+      "max_new_tokens": 64,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    {
+      "name": "prefill_long_bs1",
+      "batch_size": 1,
+      "prompt_tokens": 1024,
+      "max_new_tokens": 64,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    {
+      "name": "sampling_bs2",
+      "batch_size": 2,
+      "prompt_tokens": 512,
+      "max_new_tokens": 64,
+      "temperature": 0.7,
+      "top_p": 0.9
+    }
+  ]
+}
